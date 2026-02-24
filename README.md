@@ -10,7 +10,7 @@ Reverse Engineering • Programming • Patching • Game Improvements • DLL C
 
 [![Downloads](https://img.shields.io/github/downloads/Chip-Biscuit/Star-Wars-Episode-I-Phantom-Menace-PC-64bit-Installer/phantom/total?label=Total%20Downloads)](https://github.com/Chip-Biscuit/Star-Wars-Episode-I-Phantom-Menace-PC-64bit-Installer/releases/tag/phantom)
 
-<sub>click the Total Downloads button above to take you to the releases page and download the exe at the bottom or direct download here: [custom installer exe](https://github.com/Chip-Biscuit/Star-Wars-Episode-I-Phantom-Menace-PC-64bit-Installer/releases/download/phantom/Chips64bit_ThePhantomMenaceInstaller.exe)</sub>
+<sub>click the Total Downloads button above to take you to the releases page with the instructions and download the exe at the bottom  of the page</sub>
 
 </div>
 
