@@ -1,4 +1,4 @@
-<img width="301" height="359" alt="Screenshot 2026-02-24 130622" src="https://github.com/user-attachments/assets/e8788a19-ec20-4e21-991b-473f03c779ac" /><div align="center">
+<div align="center">
 
 # 🎮 Game Specific Patches & DLL Wrappers  
 
