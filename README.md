@@ -241,9 +241,6 @@ a visual aid:
 
 <img width="301" height="359" alt="Screenshot 2026-02-24 130622" src="https://github.com/user-attachments/assets/9a264dba-d9f0-4b49-9347-168250d65a84" />
 
-
----
-
 ### Important – Resolution Handling
 
 Do **NOT** use dgVoodoo2 to force resolution scaling.
@@ -262,6 +259,24 @@ Using dgVoodoo resolution scaling in combination with the installer’s widescre
 - Unintended behaviour
 
 dgVoodoo should only be used as a compatibility wrapper if required.
+
+---
+
+## Source Code Availability
+
+The installer and patching framework are currently closed-source while active reverse engineering work is ongoing.
+
+This is intentional to avoid fragmentation, duplicate builds, and large volumes of pull requests while core systems are still being explored and stabilised.
+
+The long-term plan is for the source code to be released once the project reaches a more mature and stable state.
+
+In the meantime:
+
+If you are a reverse engineer, developer, or technical contributor interested in the project, feel free to join the Discord community. I am happy to share progress, findings, and technical details with others working in this space.
+
+Collaboration is welcome — the goal is preservation and understanding of the game’s engine.
+
+---
 
 ## Why This Exists
 
