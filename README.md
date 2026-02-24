@@ -59,20 +59,21 @@ No copyrighted game files are distributed.
 
 ---
 
-## What This Installer Does
+## What’s Included
 
 ### Base Installation
-- Installs the game on modern 64-bit Windows
-- Applies the official 1.1 update
-- Fixes folder permissions
-- Resolves compatibility issues
-- Sets proper DPI awareness
+- Full game installation on modern 64-bit Windows
+- Official 1.1 patch applied
+- Folder permission fixes
+- Compatibility adjustments
+- DPI awareness enabled
 
-### Optional Enhancements (Selectable During Install)
-- Widescreen resolution support
-- 60 FPS patch (original is 30 FPS)
+### Optional Enhancements (Selectable During Installation)
+- Widescreen resolution support (via obi.ini) default 1920x1080
+- 60 FPS modification (original game is 30 FPS)
 - Adjustable in-game FOV system
-- Optional 100% completion save pack
+- Optional 100% completion save pack  
+- ability to play the game past 1920x1080
 
 You may install the base game only if you prefer the original experience.
 
