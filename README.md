@@ -233,7 +233,9 @@ This is mainly required for certain AMD GPUs. NVIDIA users typically do not need
 
 Launch the game again.
 
-The aim will be to fix this so you dont have to use dgvoodo2 in the future but for now this is a work around, it will still work with the patches just make sure to not use dgvoodo2 for resoltuion as obi.ini is a native solution.
+This is currently a compatibility workaround. Future updates aim to resolve this without requiring dgVoodoo2.
+
+The installer already provides native widescreen support through obi.ini. Do not use dgVoodoo for resolution scaling, as this may cause UI distortion or double scaling.
 
 a visual aid: 
 
