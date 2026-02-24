@@ -206,7 +206,7 @@ This option is off by default.
 
 ---
 
-## Fix: "Could Not Initialize Graphics Hardware" (Primarily AMD GPUs)
+## Fix: "Could Not Initialize Graphics Hardware" (Primarily AMD GPUs) (not included in installer)
 
 Some modern AMD graphics drivers may fail to properly initialize the game's legacy DirectDraw / Direct3D components.
 
@@ -264,7 +264,7 @@ dgVoodoo should only be used as a compatibility wrapper if required.
 
 ---
 
-## Restoring EAX Audio (DSOAL)
+## Restoring EAX Audio (DSOAL) (not included in installer)
 
 The game originally supported EAX environmental audio, which is no longer available on modern Windows systems.
 
@@ -294,7 +294,7 @@ Environmental audio effects should now function again.
 ---
 
 
-## Controller Support (Xidi)
+## Controller Support (Xidi) (not included in installer)
 
 Xidi can be used to provide improved controller support and full remapping flexibility.
 
