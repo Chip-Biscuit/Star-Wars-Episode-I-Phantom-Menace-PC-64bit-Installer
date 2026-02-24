@@ -1,4 +1,4 @@
-<div align="center">
+<img width="301" height="359" alt="Screenshot 2026-02-24 130622" src="https://github.com/user-attachments/assets/e8788a19-ec20-4e21-991b-473f03c779ac" /><div align="center">
 
 # 🎮 Game Specific Patches & DLL Wrappers  
 
@@ -205,6 +205,63 @@ If enabled:
 This option is off by default.
 
 ---
+
+## Fix: "Could Not Initialize Graphics Hardware" (Primarily AMD GPUs)
+
+Some modern AMD graphics drivers may fail to properly initialize the game's legacy DirectDraw / Direct3D components.
+
+If you receive the error:
+
+> "Could not initialize graphics hardware"
+
+this is typically a driver compatibility issue.
+
+### Recommended Solution – dgVoodoo2 (Compatibility Wrapper)
+
+This is mainly required for certain AMD GPUs. NVIDIA users typically do not need this.
+
+1. Download dgVoodoo2 from the official website.
+2. Extract the archive.
+3. Copy the following files from the `MS` folder into the game directory (where `WMAIN.exe` is located):
+   - `DDraw.dll`
+   - `D3DImm.dll`
+4. Run `dgVoodooCpl.exe`.
+5. Under the **DirectX** tab:
+   - Ensure *"Disable and passthru to real DirectX"* is **unchecked**.
+   - Select **dgVoodoo Virtual 3D Accelerated Card**.
+6. Click Apply and close.
+
+Launch the game again.
+
+The aim will be to fix this so you dont have to use dgvoodo2 in the future but for now this is a work around, it will still work with the patches just make sure to not use dgvoodo2 for resoltuion as obi.ini is a native solution.
+
+a visual aid: 
+
+<img width="298" height="359" alt="Screenshot 2026-02-24 130556" src="https://github.com/user-attachments/assets/14f982c7-9985-42f5-8326-586d8b3bced6" />
+
+<img width="301" height="359" alt="Screenshot 2026-02-24 130622" src="https://github.com/user-attachments/assets/9a264dba-d9f0-4b49-9347-168250d65a84" />
+
+
+---
+
+### Important – Resolution Handling
+
+Do **NOT** use dgVoodoo2 to force resolution scaling.
+
+Resolution should be configured natively using:
+
+obi.ini
+
+The installer patches the game to properly support modern resolutions through `obi.ini`.
+
+Using dgVoodoo resolution scaling in combination with the installer’s widescreen enhancements may cause:
+
+- Incorrect aspect ratio
+- Double scaling
+- UI distortion
+- Unintended behaviour
+
+dgVoodoo should only be used as a compatibility wrapper if required.
 
 ## Why This Exists
 
