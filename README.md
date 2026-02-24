@@ -139,6 +139,8 @@ The FOV system allows you to toggle between:
 - Original FOV
 - Custom FOV value from scripts/chip.ini
 
+The FOV hotkey by default is F1 and you can change this to any keyboard or mouse key you like using the folder scripts -> chip.ini
+
 Due to engine limitations, FOV changes only apply after the camera state refreshes via the menu.
 
 ---
