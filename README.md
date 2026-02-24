@@ -216,7 +216,7 @@ If you receive the error:
 
 this is typically a driver compatibility issue.
 
-### Recommended Solution – dgVoodoo2 (Compatibility Wrapper)
+### Recommended Solution – [dgVoodoo2](https://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/) (Compatibility Wrapper)
 
 This is mainly required for certain AMD GPUs. NVIDIA users typically do not need this.
 
