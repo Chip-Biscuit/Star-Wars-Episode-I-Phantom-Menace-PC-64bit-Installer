@@ -31,6 +31,23 @@ This is a preservation project first, with optional modern enhancements availabl
 
 ---
 
+## Reverse Engineering Progress
+
+I’ve begun actively reverse engineering the game’s executable to understand how the engine works internally and how far it can be pushed.
+
+So far I’ve successfully:
+
+- Located and patched the camera FOV at runtime
+- Analysed frame timing and implemented the 60 FPS modification
+- Investigated how the engine handles level loads and why crashes occur with custom FOV
+- Begun exploring model and asset file structures
+
+These discoveries are what power the current fixes in this installer.
+
+This is only the beginning. The long-term goal is to properly understand the engine, document its behaviour, and eventually enable full mod support.
+
+---
+
 ## Legal Notice
 
 You must legally own an original retail copy of the game.
