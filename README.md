@@ -264,6 +264,37 @@ dgVoodoo should only be used as a compatibility wrapper if required.
 
 ---
 
+## Restoring EAX Audio (DSOAL)
+
+The game originally supported EAX environmental audio, which is no longer available on modern Windows systems.
+
+EAX-style audio can be restored using [DSOAL](https://github.com/kcat/dsoal) (DirectSound-to-OpenAL wrapper):
+
+### Installation
+
+1. Download the latest release from the DSOAL GitHub page.
+2. Extract the archive.
+3. Navigate to:
+
+DSOAL+HRTF → win32
+
+4. Copy **all contents** from this folder into the game installation directory (where `WMAIN.exe` is located).
+5. Launch the game.
+6. In the in-game sound settings, enable the **EAX** option.
+
+Environmental audio effects should now function again.
+
+---
+
+### Notes
+
+- This is an optional enhancement and not required to run the game.
+- Works alongside the installer and patches without conflict.
+- Behaviour may vary depending on audio hardware and OpenAL configuration.
+- If audio issues occur, remove the DSOAL files from the game directory.
+
+---
+
 ## Source Code Availability
 
 The installer and patching framework are currently closed-source while active reverse engineering work is ongoing.
