@@ -284,14 +284,101 @@ DSOAL+HRTF → win32
 
 Environmental audio effects should now function again.
 
----
-
 ### Notes
 
 - This is an optional enhancement and not required to run the game.
 - Works alongside the installer and patches without conflict.
 - Behaviour may vary depending on audio hardware and OpenAL configuration.
 - If audio issues occur, remove the DSOAL files from the game directory.
+
+---
+
+
+## Controller Support (Xidi)
+
+Xidi can be used to provide improved controller support and full remapping flexibility.
+
+✔ Works with modern XInput gamepads (Xbox controllers and compatible devices).  
+⚠ Always create a backup of `WMAIN.exe` before modifying anything.
+
+
+### Standard Installation (Recommended)
+
+1. Download the latest release of [Xidi](https://github.com/samuelgr/Xidi)
+2. Extract the archive.
+3. Open the `Win32` folder inside the extracted files.
+4. Copy `winmm.dll` into the game directory (next to `WMAIN.exe`).
+5. Create a file named `Xidi.ini` in the same directory (instructions below).
+6. Launch the game and test controller input.
+
+If the controller does not respond, use the fallback method below.
+
+
+### Fallback Method (Required on Some Windows 11 Systems)
+
+Some systems may require redirecting the `winmm.dll` import.
+
+1. Rename `winmm.dll` to `winm2.dll`.
+2. Open `WMAIN.exe` in a hex editor.
+3. Search for the ASCII string:
+
+```
+winmm.dll
+```
+
+4. Replace it with:
+
+```
+winm2.dll
+```
+
+(Do not change the length — it must remain the same.)
+5. Save the file.
+6. Place `winm2.dll` and `Xidi.ini` in the game directory (next to `WMAIN.exe`).
+
+
+## Creating Xidi.ini
+
+Create a new text file in the game directory named:
+
+```
+Xidi.ini
+```
+
+Open it in a text editor and paste the following configuration:
+
+```ini
+[Mapper]
+Type                = PhantomMenace
+
+[CustomMapper:PhantomMenace]
+StickLeftX          = Axis(X)
+StickLeftY          = Axis(Y)
+StickRightX         = Split( Compound( Keyboard(LAlt), Keyboard(RIGHT) ), Compound( Keyboard(LAlt), Keyboard(LEFT) ) )
+StickRightY         = null
+ButtonA             = Button(1)
+ButtonB             = Button(2)
+ButtonX             = Button(3)
+ButtonY             = Button(4)
+ButtonLB            = Button(5)
+ButtonRB            = Button(6)
+TriggerLT           = Button(7)
+TriggerRT           = Button(8)
+ButtonBack          = Button(9)
+ButtonStart         = Keyboard(ESCAPE)
+ButtonLS            = Button(11)
+ButtonRS            = Button(12)
+DpadUp              = Keyboard(UP)
+DpadDown            = Keyboard(DOWN)
+DpadLeft            = Keyboard(LEFT)
+DpadRight           = Keyboard(RIGHT)
+```
+
+Important:
+
+- Make sure the file is saved as `Xidi.ini`
+- Ensure it is not accidentally saved as `Xidi.ini.txt`
+- The game is 32-bit — use the **Win32** build of Xidi
 
 ---
 
