@@ -19,7 +19,13 @@ Reverse Engineering • Programming • Patching • Game Improvements • DLL C
 
 ![ezgif com-animated-gif-maker (7)](https://github.com/user-attachments/assets/c769f3d3-8260-434f-84ce-11a8193c972e)
 
-
+<br><br>
+# Official Game Walkthrough with modern Enhancements used from the installer,
+Watch the official Video here
+<a href="https://www.youtube.com/watch?v=BVLAuS9X9Ic">
+ <img src="https://github.com/user-attachments/assets/101939cb-90b6-43f9-9145-78e1b7abcc24"> </a><br> 
+###### <i>Click the image above to watch the video</i>
+<br>
 The definitive way to play The Phantom Menace on modern Windows systems.
 
 This project provides a fully rebuilt 64-bit installer for the original PC version of Star Wars: Episode I – The Phantom Menace.
