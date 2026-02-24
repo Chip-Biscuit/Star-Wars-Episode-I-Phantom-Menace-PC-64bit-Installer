@@ -1,2 +1,174 @@
-# Star-Wars-Episode-I-Phantom-Menace-PC-64bit-Installer-Widescreen-Fixes
-Definitive 64-bit installer for Star Wars Episode I: The Phantom Menace (PC) with widescreen, FPS, and modern compatibility fixes.
+# Star Wars: Episode I – The Phantom Menace (PC)
+## Modern 64-bit Installer + Fix Pack
+
+The definitive way to play The Phantom Menace on modern Windows systems.
+
+This project provides a fully rebuilt 64-bit installer for the original PC version of Star Wars: Episode I – The Phantom Menace.
+
+The original 16-bit installer no longer works on modern versions of Windows.  
+This project recreates the installation process through reverse engineering, ensuring the game remains playable for future generations.
+
+This is a preservation project first, with optional modern enhancements available.
+
+---
+
+## Legal Notice
+
+You must legally own an original retail copy of the game.
+
+This installer does NOT include any game data.  
+It copies the required files from your original CD or mounted ISO during installation.
+
+No copyrighted game files are distributed.
+
+---
+
+## What This Installer Does
+
+### Base Installation
+- Installs the game on modern 64-bit Windows
+- Applies the official 1.1 update
+- Fixes folder permissions
+- Resolves compatibility issues
+- Sets proper DPI awareness
+
+### Optional Enhancements (Selectable During Install)
+- Widescreen resolution support
+- 60 FPS patch (original is 30 FPS)
+- Adjustable in-game FOV system
+- Optional 100% completion save pack
+
+You may install the base game only if you prefer the original experience.
+
+---
+
+## Resolution / Widescreen Support
+
+If you install the Legacy Resolution option, an obi.ini file will be added to the game folder.
+
+It is preconfigured for 1920x1080.
+
+You can change it to any resolution by editing:
+- Game resolution
+- Menu resolution
+
+Tested up to 4K.  
+Ultrawide and other custom resolutions may also work.
+
+Feedback is welcome.
+
+---
+
+## FPS Patch
+
+The game is patched to run at 60 FPS instead of the original 30 FPS.
+
+This improves smoothness while maintaining original gameplay timing.
+
+---
+
+## FOV System (Work in Progress)
+
+The FOV system allows you to toggle between:
+- Original FOV
+- Custom FOV value from scripts/chip.ini
+
+Due to engine limitations, FOV changes only apply after the camera state refreshes via the menu.
+
+---
+
+### How to Change FOV
+
+1. While playing in-game, press your configured FOV hotkey  
+2. Press ESC to open the menu  
+3. Close the menu  
+
+The FOV change will now take effect.
+
+Sequence:
+
+Gameplay → Press Hotkey → Open Menu → Close Menu → FOV Updates
+
+To revert:
+
+Gameplay → Press Hotkey → Open Menu → Close Menu → Original FOV Restored
+
+---
+
+### Important Level-Load Warning
+
+If a level loads while custom FOV is active, the game may crash.
+
+Before finishing a level:
+1. Toggle FOV back to original game FOV (60) using the above method
+2. Allow the next level to load
+3. Reapply your custom FOV once gameplay resumes
+
+This limitation will be improved in future updates.
+
+---
+
+## Launching the Game
+
+After installation:
+- You can unmount the disc
+- Use the desktop shortcut
+
+Run the game using:
+
+WMAIN.exe
+
+Do NOT launch using:
+
+TPM.exe (launcher) although you can use it to change some options.
+
+The installer automatically creates the correct shortcut.
+
+---
+
+## Optional 100% Game Saves
+
+You can optionally install a full set of completion saves.
+
+If enabled:
+- All levels will be unlocked
+- All progression complete
+
+This option is off by default.
+
+---
+
+## Modding Community
+
+If you love this game, consider joining the community:
+
+https://discord.gg/KX7R4quSQw
+
+Goals:
+- Help players get the game running
+- Reverse engineer systems and file formats
+- Develop modding tools
+- Enable custom maps, textures, and models
+- Preserve the game long-term
+
+Long-term goal: full reverse engineering and complete mod support.
+
+Reverse engineers welcome.
+
+---
+
+## Why This Exists
+
+I have played this game since I was 4 years old.
+
+This project exists purely out of passion and preservation.
+
+Everything is released for free to:
+- Keep the game alive
+- Improve compatibility
+- Help the community
+- Preserve PC gaming history
+
+If you try it, feedback is always appreciated.
+
+— Chip
