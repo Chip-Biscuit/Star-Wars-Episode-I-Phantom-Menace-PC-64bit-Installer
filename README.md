@@ -89,6 +89,25 @@ You may install the base game only if you prefer the original experience.
 
 ---
 
+## Modding Community
+
+If you love this game, consider joining the community:
+
+https://discord.gg/KX7R4quSQw
+
+Goals:
+- Help players get the game running
+- Reverse engineer systems and file formats
+- Develop modding tools
+- Enable custom maps, textures, and models
+- Preserve the game long-term
+
+Long-term goal: full reverse engineering and complete mod support.
+
+Reverse engineers welcome.
+
+---
+
 ## Resolution / Widescreen Support
 
 If you install the Legacy Resolution option, an obi.ini file will be added to the game folder.
@@ -182,25 +201,6 @@ If enabled:
 - All progression complete
 
 This option is off by default.
-
----
-
-## Modding Community
-
-If you love this game, consider joining the community:
-
-https://discord.gg/KX7R4quSQw
-
-Goals:
-- Help players get the game running
-- Reverse engineer systems and file formats
-- Develop modding tools
-- Enable custom maps, textures, and models
-- Preserve the game long-term
-
-Long-term goal: full reverse engineering and complete mod support.
-
-Reverse engineers welcome.
 
 ---
 
