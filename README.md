@@ -95,6 +95,8 @@ No copyrighted game files are distributed.
   - Borderless windowed mode
   - Improved compatibility on modern GPUs
 
+This resolves the vast majority of startup and rendering issues on modern systems (AMD / NVIDIA / Intel).
+
 #### Audio
 - DSOAL (restores EAX environmental audio on modern Windows)
 
