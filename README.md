@@ -100,9 +100,15 @@ No copyrighted game files are distributed.
 
 #### Controller Support
 - Xidi input wrapper
-  - Modern controller compatibility
-  - Xbox controller support
-  - Remapping via Xidi.ini
+- Modern XInput controller support
+- Xbox controller compatibility
+- Full remapping via `Xidi.ini`
+
+Controller notes:
+- **Start** opens the in-game menu
+- **Back** toggles FOV when mapped to F1
+- If you change the FOV hotkey in `scripts/chip.ini`, update it in `Xidi.ini` as well
+- roll with the right stick like in the ps1 version
 
 ---
 
@@ -252,18 +258,16 @@ Restores environmental audio support removed from modern Windows versions.
 
 ---
 
-## Controller Support (Xidi)
+## Controller Support
 
-Enabled by default in the installer.
+Xidi is included and enabled by default.
 
 Provides:
+- XInput support
+- Xbox controller compatibility
+- Custom remapping via `Xidi.ini`
 
-- Modern XInput controller compatibility
-- Xbox controller support
-- Full remapping via `Xidi.ini`
-- press the start button to open the menu in game on the controller
-
-No manual setup required unless creating a custom controller configuration.
+No manual setup required unless creating custom mappings.
 
 ---
 
