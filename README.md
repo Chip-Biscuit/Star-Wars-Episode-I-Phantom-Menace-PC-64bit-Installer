@@ -223,179 +223,112 @@ This option is off by default.
 
 ---
 
-## Fix: "Could Not Initialize Graphics Hardware" (Primarily AMD GPUs) (not included in installer)
+## Graphics Issue: "Could Not Initialize Graphics Hardware"
 
-Some modern AMD graphics drivers may fail to properly initialize the game's legacy DirectDraw / Direct3D components.
-
-If you receive the error:
+In rare cases (primarily certain AMD driver versions), the game may fail to initialise legacy DirectDraw / Direct3D and display:
 
 > "Could not initialize graphics hardware"
 
-this is typically a driver compatibility issue.
+This is a driver compatibility issue.
 
-### Recommended Solution – [dgVoodoo2](https://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/) (Compatibility Wrapper)
+---
 
-This is mainly required for certain AMD GPUs. NVIDIA users typically do not need this.
+### Default Installer Configuration (Recommended)
 
-1. Download dgVoodoo2 from the official website.
+The installer enables the following compatibility components **by default**:
+
+- DirectX 7 → DirectX 9 wrapper (dxwrapper)
+- Anti-aliasing
+- Anisotropic filtering
+- Borderless windowed mode
+- Modern GPU compatibility improvements
+- DSOAL (restores EAX audio)
+- Xidi (modern controller support)
+
+For the vast majority of systems, no additional configuration is required.
+
+Install normally and launch the game.
+
+---
+
+### dgVoodoo2 — Use Only If the Error Persists
+
+If the game still fails to initialise graphics after installation, dgVoodoo2 can be used as a fallback compatibility layer.
+
+This is mainly required for certain AMD GPUs. NVIDIA systems typically do not need this.
+
+⚠ IMPORTANT:
+
+If you plan to use dgVoodoo2, you must install the game **WITHOUT** the Elisha DirectX wrapper enabled.
+
+During installation:
+
+- Untick: **Elisha wrapper (DirectX 7 → DirectX 9)**
+
+Do NOT use dxwrapper and dgVoodoo together.
+
+---
+
+### dgVoodoo2 Installation Steps
+
+1. Download dgVoodoo2 from the official site:  
+   https://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/
 2. Extract the archive.
 3. Copy the following files from the `MS` folder into the game directory (where `WMAIN.exe` is located):
    - `DDraw.dll`
    - `D3DImm.dll`
 4. Run `dgVoodooCpl.exe`.
 5. Under the **DirectX** tab:
-   - Ensure *"Disable and passthru to real DirectX"* is **unchecked**.
-   - Select **dgVoodoo Virtual 3D Accelerated Card**.
+   - Ensure *"Disable and passthru to real DirectX"* is **unchecked**
+   - Select **dgVoodoo Virtual 3D Accelerated Card**
 6. Click Apply and close.
+7. Launch the game again.
 
-Launch the game again.
+---
 
-This is currently a compatibility workaround. Future updates aim to resolve this without requiring dgVoodoo2.
-
-The installer already provides native widescreen support through obi.ini. Do not use dgVoodoo for resolution scaling, as this may cause UI distortion or double scaling.
-
-a visual aid: 
-
-<img width="298" height="359" alt="Screenshot 2026-02-24 130556" src="https://github.com/user-attachments/assets/14f982c7-9985-42f5-8326-586d8b3bced6" />
-
-<img width="301" height="359" alt="Screenshot 2026-02-24 130622" src="https://github.com/user-attachments/assets/9a264dba-d9f0-4b49-9347-168250d65a84" />
-
-### Important – Resolution Handling
+### Important — Resolution Handling
 
 Do **NOT** use dgVoodoo2 to force resolution scaling.
 
 Resolution should be configured natively using:
 
+```
 obi.ini
+```
 
-The installer patches the game to properly support modern resolutions through `obi.ini`.
+The installer already patches the game for modern resolutions.
 
-Using dgVoodoo resolution scaling in combination with the installer’s widescreen enhancements may cause:
+Using dgVoodoo scaling together with the installer’s widescreen enhancements may cause:
 
 - Incorrect aspect ratio
 - Double scaling
 - UI distortion
 - Unintended behaviour
 
-dgVoodoo should only be used as a compatibility wrapper if required.
+dgVoodoo2 should only be used as a last-resort compatibility layer.
 
 ---
 
-## Restoring EAX Audio (DSOAL) (not included in installer)
+## Audio: EAX Restoration (DSOAL)
 
-The game originally supported EAX environmental audio, which is no longer available on modern Windows systems.
+Enabled by default in the installer.
 
-EAX-style audio can be restored using [DSOAL](https://github.com/kcat/dsoal) (DirectSound-to-OpenAL wrapper):
-
-### Installation
-
-1. Download the latest release from the DSOAL GitHub page.
-2. Extract the archive.
-3. Navigate to:
-
-DSOAL+HRTF → win32
-
-4. Copy **all contents** from this folder into the game installation directory (where `WMAIN.exe` is located).
-5. Launch the game.
-6. In the in-game sound settings, enable the **EAX** option.
-
-Environmental audio effects should now function again.
-
-### Notes
-
-- This is an optional enhancement and not required to run the game.
-- Works alongside the installer and patches without conflict.
-- Behaviour may vary depending on audio hardware and OpenAL configuration.
-- If audio issues occur, remove the DSOAL files from the game directory.
+Restores environmental audio support removed from modern Windows versions.
 
 ---
 
+## Controller Support (Xidi)
 
-## Controller Support (Xidi) (not included in installer)
+Enabled by default in the installer.
 
-Xidi can be used to provide improved controller support and full remapping flexibility.
+Provides:
 
-✔ Works with modern XInput gamepads (Xbox controllers and compatible devices).  
-⚠ Always create a backup of `WMAIN.exe` before modifying anything.
+- Modern XInput controller compatibility
+- Xbox controller support
+- Full remapping via `Xidi.ini`
+- press the start button to open the menu in game on the controller
 
-
-### Standard Installation (Recommended)
-
-1. Download the latest release of [Xidi](https://github.com/samuelgr/Xidi)
-2. Extract the archive.
-3. Open the `Win32` folder inside the extracted files.
-4. Copy `winmm.dll` into the game directory (next to `WMAIN.exe`).
-5. Create a file named `Xidi.ini` in the same directory (instructions below).
-6. Launch the game and test controller input.
-
-If the controller does not respond, use the fallback method below.
-
-
-### Fallback Method (Required on Some Windows 11 Systems)
-
-Some systems may require redirecting the `winmm.dll` import.
-
-1. Rename `winmm.dll` to `winm2.dll`.
-2. Open `WMAIN.exe` in a hex editor.
-3. Search for the ASCII string:
-
-```
-winmm.dll
-```
-
-4. Replace it with:
-
-```
-winm2.dll
-```
-
-(Do not change the length — it must remain the same.)
-5. Save the file.
-6. Place `winm2.dll` and `Xidi.ini` in the game directory (next to `WMAIN.exe`).
-
-
-## Creating Xidi.ini
-
-Create a new text file in the game directory named:
-
-```
-Xidi.ini
-```
-
-Open it in a text editor and paste the following configuration:
-
-```ini
-[Mapper]
-Type                = PhantomMenace
-
-[CustomMapper:PhantomMenace]
-StickLeftX          = Axis(X)
-StickLeftY          = Axis(Y)
-StickRightX         = Split( Compound( Keyboard(LAlt), Keyboard(RIGHT) ), Compound( Keyboard(LAlt), Keyboard(LEFT) ) )
-StickRightY         = null
-ButtonA             = Button(1)
-ButtonB             = Button(2)
-ButtonX             = Button(3)
-ButtonY             = Button(4)
-ButtonLB            = Button(5)
-ButtonRB            = Button(6)
-TriggerLT           = Button(7)
-TriggerRT           = Button(8)
-ButtonBack          = Button(9)
-ButtonStart         = Keyboard(ESCAPE)
-ButtonLS            = Button(11)
-ButtonRS            = Button(12)
-DpadUp              = Keyboard(UP)
-DpadDown            = Keyboard(DOWN)
-DpadLeft            = Keyboard(LEFT)
-DpadRight           = Keyboard(RIGHT)
-```
-
-Important:
-
-- Make sure the file is saved as `Xidi.ini`
-- Ensure it is not accidentally saved as `Xidi.ini.txt`
-- The game is 32-bit — use the **Win32** build of Xidi
+No manual setup required unless creating a custom controller configuration.
 
 ---
 
