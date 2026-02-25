@@ -223,89 +223,24 @@ This option is off by default.
 
 ---
 
-## Graphics Issue: "Could Not Initialize Graphics Hardware"
+## Graphics Compatibility
 
-In rare cases (primarily certain AMD driver versions), the game may fail to initialise legacy DirectDraw / Direct3D and display:
+The installer includes modern graphics compatibility enhancements enabled by default.
 
-> "Could not initialize graphics hardware"
-
-This is a driver compatibility issue.
-
----
-
-### Default Installer Configuration (Recommended)
-
-The installer enables the following compatibility components **by default**:
+These include:
 
 - DirectX 7 → DirectX 9 wrapper (dxwrapper)
 - Anti-aliasing
 - Anisotropic filtering
 - Borderless windowed mode
 - Modern GPU compatibility improvements
-- DSOAL (restores EAX audio)
-- Xidi (modern controller support)
+- Native widescreen and custom resolution support
 
-For the vast majority of systems, no additional configuration is required.
+This resolves the vast majority of startup and rendering issues on modern systems (AMD / NVIDIA / Intel).
+
+No external graphics wrappers or additional configuration are required.
 
 Install normally and launch the game.
-
----
-
-### dgVoodoo2 — Use Only If the Error Persists
-
-If the game still fails to initialise graphics after installation, dgVoodoo2 can be used as a fallback compatibility layer.
-
-This is mainly required for certain AMD GPUs. NVIDIA systems typically do not need this.
-
-⚠ IMPORTANT:
-
-If you plan to use dgVoodoo2, you must install the game **WITHOUT** the Elisha DirectX wrapper enabled.
-
-During installation:
-
-- Untick: **Elisha wrapper (DirectX 7 → DirectX 9)**
-
-Do NOT use dxwrapper and dgVoodoo together.
-
----
-
-### dgVoodoo2 Installation Steps
-
-1. Download dgVoodoo2 from the official site:  
-   https://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/
-2. Extract the archive.
-3. Copy the following files from the `MS` folder into the game directory (where `WMAIN.exe` is located):
-   - `DDraw.dll`
-   - `D3DImm.dll`
-4. Run `dgVoodooCpl.exe`.
-5. Under the **DirectX** tab:
-   - Ensure *"Disable and passthru to real DirectX"* is **unchecked**
-   - Select **dgVoodoo Virtual 3D Accelerated Card**
-6. Click Apply and close.
-7. Launch the game again.
-
----
-
-### Important — Resolution Handling
-
-Do **NOT** use dgVoodoo2 to force resolution scaling.
-
-Resolution should be configured natively using:
-
-```
-obi.ini
-```
-
-The installer already patches the game for modern resolutions.
-
-Using dgVoodoo scaling together with the installer’s widescreen enhancements may cause:
-
-- Incorrect aspect ratio
-- Double scaling
-- UI distortion
-- Unintended behaviour
-
-dgVoodoo2 should only be used as a last-resort compatibility layer.
 
 ---
 
