@@ -303,6 +303,37 @@ Everything is released for free to:
 
 If you try it, feedback is always appreciated.
 
+---
+## Credits
+
+This project integrates and builds upon the work of the following developers and projects:
+
+- [UCyborg – Legacy D3D Resolution Hack](https://github.com/UCyborg/LegacyD3DResolutionHack)  
+  Extended resolution handling beyond original engine limits.
+
+- [ThirteenAG – Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader)  
+  ASI loading framework used for runtime modifications.
+
+- [elishacloud – dxwrapper](https://github.com/elishacloud/dxwrapper)  
+  DirectX 7 → DirectX 9 translation layer enabling:
+  - Anti-aliasing  
+  - Anisotropic filtering  
+  - Borderless window mode  
+  - Modern GPU compatibility  
+
+- [kcat – DSOAL](https://github.com/kcat/dsoal)  
+  Restores EAX environmental audio on modern Windows systems.
+
+- [samuelgr – Xidi](https://github.com/samuelgr/Xidi)  
+  Modern XInput controller support and flexible input remapping.
+
+---
+
+### Project Direction & Integration
+
+Installer rebuild, engine research, patch integration, FOV system, FPS modifications, controller bindings, and modernisation framework:
+
+**Chip**
 “Creating compatibility fixes and enhancements for legacy PC games.”
 
 # Chip
