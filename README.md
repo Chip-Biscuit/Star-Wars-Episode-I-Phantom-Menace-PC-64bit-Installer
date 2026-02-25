@@ -79,13 +79,30 @@ No copyrighted game files are distributed.
 - DPI awareness enabled
 
 ### Optional Enhancements (Selectable During Installation)
-- Widescreen resolution support (via obi.ini) default 1920x1080
+
+#### Gameplay & Engine
+- Widescreen resolution support (via obi.ini) — default 1920×1080
+- Greater-than-1080p resolution support
 - 60 FPS modification (original game is 30 FPS)
 - Adjustable in-game FOV system
-- Optional 100% completion save pack  
-- ability to play the game past 1920x1080
+- Optional 100% completion save pack
 
-You may install the base game only if you prefer the original experience.
+#### Graphics
+- LegacyD3D Resolution Hack (extended resolution handling)
+- DirectX 7 → DirectX 9 wrapper (dxwrapper)
+  - Anti-aliasing
+  - Anisotropic filtering
+  - Borderless windowed mode
+  - Improved compatibility on modern GPUs
+
+#### Audio
+- DSOAL (restores EAX environmental audio on modern Windows)
+
+#### Controller Support
+- Xidi input wrapper
+  - Modern controller compatibility
+  - Xbox controller support
+  - Remapping via Xidi.ini
 
 ---
 
