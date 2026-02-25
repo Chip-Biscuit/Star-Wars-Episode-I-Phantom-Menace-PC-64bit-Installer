@@ -41,6 +41,25 @@ Gameplay recorded using the modern 64-bit installer with widescreen, FOV, and 60
 
 ---
 
+## Modding Community
+
+If you love this game, consider joining the community:
+
+https://discord.gg/KX7R4quSQw
+
+Goals:
+- Help players get the game running
+- Reverse engineer systems and file formats
+- Develop modding tools
+- Enable custom maps, textures, and models
+- Preserve the game long-term
+
+Long-term goal: full reverse engineering and complete mod support.
+
+Reverse engineers welcome.
+
+---
+
 ## Reverse Engineering Progress
 
 I’ve begun actively reverse engineering the game’s executable to understand how the engine works internally and how far it can be pushed.
@@ -111,25 +130,6 @@ Controller notes:
 - **Back** toggles FOV when mapped to F1
 - If you change the FOV hotkey in `scripts/chip.ini`, update it in `Xidi.ini` as well
 - roll with the right stick like in the ps1 version
-
----
-
-## Modding Community
-
-If you love this game, consider joining the community:
-
-https://discord.gg/KX7R4quSQw
-
-Goals:
-- Help players get the game running
-- Reverse engineer systems and file formats
-- Develop modding tools
-- Enable custom maps, textures, and models
-- Preserve the game long-term
-
-Long-term goal: full reverse engineering and complete mod support.
-
-Reverse engineers welcome.
 
 ---
 
