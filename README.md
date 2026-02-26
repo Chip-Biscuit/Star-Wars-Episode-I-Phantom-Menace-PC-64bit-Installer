@@ -304,6 +304,13 @@ Everything is released for free to:
 If you try it, feedback is always appreciated.
 
 ---
+
+### Stand alone patches 
+
+If for any reason you don't want to use the installer maybe you already have the game installed and you just want the patches and upgrades and not the installer then see [Stand alone patches](https://github.com/Chip-Biscuit/Star-Wars-Episode-I-Phantom-Menace-PC-Stand-Alone-Fix-Files)
+
+---
+
 ## Credits
 
 This project integrates and builds upon the work of the following developers and projects:
