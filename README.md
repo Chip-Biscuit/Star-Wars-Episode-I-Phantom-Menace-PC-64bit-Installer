@@ -37,6 +37,7 @@ Gameplay recorded using the modern 64-bit installer with widescreen, FOV, and 60
 [![Watch the video](https://github.com/user-attachments/assets/101939cb-90b6-43f9-9145-78e1b7abcc24)](https://youtu.be/zAeQpJcd5-Q)
 
 ###### <i>Click the image above to watch the video</i>
+
 <br>
 
 ---
