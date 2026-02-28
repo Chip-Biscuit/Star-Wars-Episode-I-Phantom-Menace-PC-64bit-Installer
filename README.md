@@ -17,7 +17,6 @@ Reverse Engineering • Programming • Patching • Game Improvements • DLL C
 # Star Wars: Episode I – The Phantom Menace (PC)
 ## Modern 64-bit Installer + Fix Pack
 
-
 The definitive way to play The Phantom Menace on modern Windows systems.
 
 This project provides a fully rebuilt 64-bit installer for the original PC version of Star Wars: Episode I – The Phantom Menace.
