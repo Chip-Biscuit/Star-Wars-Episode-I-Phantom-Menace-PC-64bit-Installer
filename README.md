@@ -253,7 +253,7 @@ Install normally and launch the game.
 
 ---
 
-## Audio: EAX Restoration (DSOAL)
+## Audio: EAX Restoration(DSOAL)
 
 Enabled by default in the installer.
 
