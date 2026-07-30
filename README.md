@@ -345,10 +345,14 @@ Installer rebuild, engine research, patch integration, FOV system, FPS modificat
 “Creating compatibility fixes and enhancements for legacy PC games.”
 
 # Chip
+
+<img width="250" height="250" alt="6502chip" src="https://github.com/user-attachments/assets/75a1d877-6562-49f6-9475-f0685dca740f" />
+
 - reverse engineer
 - programmer
 - developer
 - Game Preservationist
   
-<img width="250" height="500" alt="my logoo" src="https://github.com/user-attachments/assets/9bb13d3f-0734-4f1d-b68f-14114b13744a" />
+
+
 
