@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎮 Game Specific Patches & DLL Wrappers  
+# Game Specific Patches & DLL Wrappers  
 
 ***created and maintained by***
 
