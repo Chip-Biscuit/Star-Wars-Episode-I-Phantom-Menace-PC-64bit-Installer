@@ -4,8 +4,6 @@
 
 ***created and maintained by***
 
-[![Chip-Biscuit Website](https://img.shields.io/badge/Chip--Biscuit-Website-blue?style=for-the-badge)](https://chip-biscuit.github.io/)
-
 Reverse Engineering • Programming • Patching • Game Improvements • DLL Creation 
 
 [![Total Downloads](https://img.shields.io/github/downloads/Chip-Biscuit/Star-Wars-Episode-I-Phantom-Menace-PC-64bit-Installer/total?label=Total%20Downloads&style=for-the-badge)](https://github.com/Chip-Biscuit/Star-Wars-Episode-I-Phantom-Menace-PC-64bit-Installer/releases)
