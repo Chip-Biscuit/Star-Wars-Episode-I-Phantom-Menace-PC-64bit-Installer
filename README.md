@@ -339,7 +339,7 @@ This project integrates and builds upon the work of the following developers and
 
 ### Project Direction & Integration
 
-Installer rebuild, engine research, patch integration, FOV system, FPS modifications, controller bindings, modernisation framework and building Modding tools for the game to extract and import textures, models, sounds etc.
+Installer rebuild, engine research, patch integration, FOV system, FPS modifications, controller bindings, modernisation framework, bug fixes and building Modding tools for the game to extract and import textures, models, sounds etc.
 
 # Chip
 
