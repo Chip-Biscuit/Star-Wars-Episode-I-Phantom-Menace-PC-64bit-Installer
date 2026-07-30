@@ -339,10 +339,7 @@ This project integrates and builds upon the work of the following developers and
 
 ### Project Direction & Integration
 
-Installer rebuild, engine research, patch integration, FOV system, FPS modifications, controller bindings, and modernisation framework:
-
-**Chip**
-“Creating compatibility fixes and enhancements for legacy PC games.”
+Installer rebuild, engine research, patch integration, FOV system, FPS modifications, controller bindings, and modernisation framework
 
 # Chip
 
