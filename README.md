@@ -151,11 +151,49 @@ Feedback is welcome.
 
 ---
 
-## FPS Patch
+## FPS Toggle System
 
-The game is patched to run at 60 FPS instead of the original 30 FPS.
+The game can now switch between the original 30 FPS mode and the enhanced 60 FPS mode at any time during gameplay.
 
-This improves smoothness while maintaining original gameplay timing.
+The default hotkey is NUMPAD + 
+
+The game will start at 60 FPS and you can toggle between 60 and 30 at any time you desire just by simply clicking the hotkey you set in 
+
+```
+scripts/chip.ini
+```
+
+Unlike the original hidden developer console command, the FPS mode can be toggled instantly using a configurable hotkey. This is so that you can toggle around game breaking bugs at 60fps.
+
+In the future of course with decomplication we will aim to fix these bugs natively and hopefully even have higher FPS in game.
+
+By default:
+
+- **Numpad +** toggles between **30 FPS** and **60 FPS**
+
+The hotkey can be changed by editing:
+
+```
+scripts/chip.ini
+```
+
+Example:
+
+```ini
+[FPS]
+Hotkey=0x6B
+```
+
+Where `0x6B` is the virtual key code for **Numpad +**.
+
+You can use the provided [hotkey]keycodes.txt to choose a hotkey.
+
+The default game behaviour is preserved:
+
+- **30 FPS** — original game timing
+- **60 FPS** — smoother gameplay and animation
+
+The toggle can be used at any time without restarting the game.
 
 ---
 
