@@ -2,7 +2,7 @@
 
 # Game Specific Patches & DLL Wrappers  
 
-***created and maintained by***
+***created and maintained by:***
 
 # Chip
 
